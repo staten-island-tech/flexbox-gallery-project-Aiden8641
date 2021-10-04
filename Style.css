@@ -5,6 +5,7 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  background-color: green;
 }
 
 h1 {
@@ -32,31 +33,7 @@ h1 {
   background-color: blue;
   border-radius: 2rem;
   width: 80% auto;
-  height: auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.gallery_picture {
-  background-color: white;
-  border-radius: 2rem;
-  padding: 5%;
-  margin: 1%;
-  width: % auto;
-  height: auto;
-  transition: all 0.26s ease-in-out;
-  outline-offset: 1rem;
-}
-*/
-.gallery_photo {
-  margin: 1rem;
-  background-color: blue;
-  border-radius: 2rem;
-  width: 60% auto;
-  height: 80% auto;
+  height: 100% auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -70,6 +47,30 @@ h1 {
   padding: 5%;
   margin: 1%;
   width: 30% auto;
+  height: auto;
+  transition: all 0.26s ease-in-out;
+  outline-offset: 1rem;
+}
+*/
+.gallery_photo {
+  margin: 1rem;
+  background-color: blue;
+  border-radius: 2rem;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gallery_picture {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 5%;
+  margin: 1%;
+  width: 30%;
   transition: all 0.26s ease-in-out;
   outline-offset: 1rem;
 }
@@ -80,6 +81,6 @@ h1 {
   outline: 1rem solid black;
 }
 
-.gallery_photo:hover .gallery_picture:not(:hover) {
+.gallery_container:hover .gallery_picture:not(:hover) {
   opacity: 0.3;
 }
