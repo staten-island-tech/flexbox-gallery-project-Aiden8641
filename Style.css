@@ -6,6 +6,9 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
 }
+body {
+  background-image: url(img/blackfabricbackground.jpg);
+}
 .title_of_page {
   background-color: green;
   height: 10%;
@@ -20,49 +23,57 @@ h1 {
 }
 
 .gallery_container {
-  background-image: url(img/blackfabricbackground.jpg);
-  background-size: ;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   margin: 0 auto;
   padding: 2rem auto;
   width: 90% auto;
-  height: 100% auto;
+  height: auto;
   min-height: 100%;
   position: relative;
 }
 
 .gallery_photo {
-  margin: 1rem;
-  background-color: rgb(255, 255, 255, 0.753);
-  border-radius: 2rem;
-  width: 80%;
-  height: 99%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   position: relative;
-  pointer-events: auto;
+  margin: 1rem;
+  background-color: blue;
+  border-radius: 2rem;
+  width: 80%;
+  height: 100%;
+}
+
+.picture_container {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 80%;
+  height: auto;
+  margin: 1rem;
 }
 
 .gallery_picture {
   background-image: url(img/red_fabric_background.jpg);
   border-radius: 2rem;
-  padding: 5%;
+  padding: 10%;
   margin: 1%;
-  width: 30%;
+  width: 100%;
+  height: 100%;
   transition: all 0.26s ease-in-out;
   outline-offset: 0.5rem;
+}
+
+.picture_text {
+  background-color: silver;
 }
 
 .gallery_picture:hover {
   transform: scale(1.1);
   transition: all 0.26s ease-in-out;
   outline: 0.4rem solid black;
-}
-
-.gallery_photo:hover .gallery_picture:not(:hover) {
-  opacity: 0.3;
 }
