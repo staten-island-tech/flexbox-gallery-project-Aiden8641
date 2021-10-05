@@ -5,82 +5,64 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+}
+.title_of_page {
   background-color: green;
+  height: 10%;
 }
 
 h1 {
   font-size: 3rem;
-  background-color: brown;
-  height: 10%;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  color: gold;
+  position: relative;
+  top: 25%;
+  text-align: center;
 }
 
 .gallery_container {
-  background-color: red;
+  background-image: url(img/blackfabricbackground.jpg);
+  background-size: ;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   justify-content: center;
   margin: 0 auto;
   padding: 2rem auto;
   width: 90% auto;
   height: 100% auto;
+  min-height: 100%;
   position: relative;
 }
-/*
+
 .gallery_photo {
   margin: 1rem;
-  background-color: blue;
+  background-color: rgb(255, 255, 255, 0.753);
   border-radius: 2rem;
-  width: 80% auto;
-  height: 100% auto;
+  width: 80%;
+  height: 99%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   position: relative;
+  pointer-events: auto;
 }
 
 .gallery_picture {
-  background-color: white;
-  border-radius: 2rem;
-  padding: 5%;
-  margin: 1%;
-  width: 30% auto;
-  height: auto;
-  transition: all 0.26s ease-in-out;
-  outline-offset: 1rem;
-}
-*/
-.gallery_photo {
-  margin: 1rem;
-  background-color: blue;
-  border-radius: 2rem;
-  width: 70%;
-  height: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.gallery_picture {
-  background-color: white;
+  background-image: url(img/red_fabric_background.jpg);
   border-radius: 2rem;
   padding: 5%;
   margin: 1%;
   width: 30%;
   transition: all 0.26s ease-in-out;
-  outline-offset: 1rem;
+  outline-offset: 0.5rem;
 }
 
 .gallery_picture:hover {
   transform: scale(1.1);
   transition: all 0.26s ease-in-out;
-  outline: 1rem solid black;
+  outline: 0.4rem solid black;
 }
 
-.gallery_container:hover .gallery_picture:not(:hover) {
+.gallery_photo:hover .gallery_picture:not(:hover) {
   opacity: 0.3;
 }
