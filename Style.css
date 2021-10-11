@@ -10,13 +10,15 @@ body {
   background-image: url(img/blackfabricbackground.jpg);
 }
 .title_of_page {
-  background-color: green;
+  background-image: url(img/Repeating_Lemon.jpg);
   height: 10%;
 }
 
-h1 {
+.site-title {
+  font-family: "Bebas Neue", cursive;
   font-size: 3rem;
-  color: gold;
+  font-weight: 900;
+  color: black;
   position: relative;
   top: 25%;
   text-align: center;
@@ -25,7 +27,7 @@ h1 {
 .gallery {
   margin: 0 auto;
   margin-top: 2rem;
-  background-color: white;
+  background-color: rgb(223, 211, 211);
   border-radius: 2rem;
   width: 80vw;
   height: auto;
@@ -36,46 +38,86 @@ h1 {
 }
 
 .gallery-card {
+  justify-content: center;
   position: relative;
-  background-color: red;
+  background-image: url(img/Repeating_Geo_Rhombus.jpg);
   border-radius: 2rem;
   width: 26%;
-  height: auto;
-  margin: 5rem auto;
+  height: 45rem;
+  margin: 4.5rem auto;
 }
 
 .card-header {
-  background-color: burlywood;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background-color: rgb(223, 213, 201);
   height: 4rem;
-  font-size: 3rem;
   text-align: center;
   border-radius: 2rem;
   margin: 1rem;
 }
 .card-img {
-  display: block;
+  position: absolute;
   padding: 1rem;
-  width: 60%;
-  height: 5rem auto;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
 }
 
 .card-text {
-  position: relative;
-  background-color: brown;
+  position: absolute;
+  background-color: rgb(157, 154, 197);
   font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
   text-align: center;
   word-wrap: break-word;
-  margin: 2rem auto;
   padding: 0.5rem;
   width: 90%;
   height: auto;
   border-radius: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.The_Sphinx {
-  width: 80%;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+.gallery-card {
+  transition: all 0.6s;
+}
+
+.mona-lisa-card:hover,
+.the-sphinx-card:hover {
+  transform: scale(1.25);
+}
+
+.eiffel-tower-card:hover,
+.starry-night-card:hover {
+  transform: rotate(20deg);
+}
+
+.trojan-horse-card:hover {
+  transform: rotateY(180deg);
+}
+
+.christ-the-redeemer-card:hover,
+.palace-of-versailles-card:hover {
+  transform: skewX(-10deg);
+}
+
+.uss-enterprise-card:hover,
+.paper-airplane-card:hover {
+  transform: rotateX(180deg);
+}
+
+/* Ipad */
+@media screen (min-width: 768px) and (max-width: 1024px) and (orientation: Portrait) {
+  gallery-card {
+    background-color: red;
+  }
 }
