@@ -6,12 +6,63 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
+@keyframes loading-background {
+  0% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes site-title {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+@keyframes gallery {
+  0% {
+    transform: translateX(100%);
+  }
+}
+@keyframes gallery-card {
+  0% {
+    opacity: 0;
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: translateX(-200%);
+  }
+  25% {
+    opacity: 0.25;
+    transform: rotateY(90deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+
 body {
   background-image: url(img/blackfabricbackground.jpg);
 }
-.title_of_page {
+
+.header-background {
   background-image: url(img/Repeating_Lemon.jpg);
   height: 10%;
+  animation: 2s ease-out 0s 1 loading-background;
 }
 
 .site-title {
@@ -22,6 +73,7 @@ body {
   position: relative;
   top: 25%;
   text-align: center;
+  animation: 2s ease-out 0s 1 site-title;
 }
 
 .gallery {
@@ -35,6 +87,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  animation: 2s ease-out 0s 1 gallery;
 }
 
 .gallery-card {
@@ -45,6 +98,8 @@ body {
   width: 26%;
   height: 45rem;
   margin: 4.5rem auto;
+  transition: all 0.6s;
+  animation: 4s ease-out 0s 1 gallery-card;
 }
 
 .card-header {
@@ -87,37 +142,91 @@ body {
   bottom: 0;
 }
 
-.gallery-card {
-  transition: all 0.6s;
-}
-
 .mona-lisa-card:hover,
 .the-sphinx-card:hover {
   transform: scale(1.25);
+  box-shadow: -5px 10px;
 }
 
 .eiffel-tower-card:hover,
 .starry-night-card:hover {
   transform: rotate(20deg);
+  box-shadow: -5px 10px;
 }
 
 .trojan-horse-card:hover {
   transform: rotateY(180deg);
+  box-shadow: -5px 10px;
 }
 
 .christ-the-redeemer-card:hover,
 .palace-of-versailles-card:hover {
   transform: skewX(-10deg);
+  box-shadow: -5px 10px;
 }
 
 .uss-enterprise-card:hover,
 .paper-airplane-card:hover {
   transform: rotateX(180deg);
+  box-shadow: -5px 10px;
 }
 
-/* Ipad */
-@media screen (min-width: 768px) and (max-width: 1024px) and (orientation: Portrait) {
-  gallery-card {
-    background-color: red;
+/* Laptop Screen Acer Chromebook 1366 x 768 */
+@media (max-width: 1366px) and (orientation: portrait) {
+  .site-title {
+    font-size: 5rem;
+  }
+  .gallery-card {
+    width: 28%;
+    height: 50rem;
+    margin: 2rem;
+  }
+  .card-header {
+    font-size: 3.5rem;
+  }
+  .card-img {
+    margin-bottom: 3rem;
+  }
+  .card-text {
+    height: auto;
+    font-size: 2.98rem;
+  }
+}
+
+/* Ipad  768 x 1024 */
+@media (max-width: 768px) and (orientation: portrait) {
+  .site-title {
+    font-size: 4rem;
+  }
+  .gallery-card {
+    width: 40%;
+    height: 45rem;
+    margin: 2rem;
+  }
+  .card-header {
+    font-size: 3rem;
+  }
+  .card-text {
+    height: auto;
+    font-size: 2.5rem;
+  }
+}
+
+/* Iphone 12  390 x 844 */
+@media (max-width: 390px) and (orientation: portrait) {
+  .site-title {
+    font-size: 3rem;
+  }
+  .gallery-card {
+    width: 80%;
+    height: 45rem;
+    margin: 2rem;
+  }
+  .card-header {
+    font-size: 2.5rem;
+  }
+  .card-text {
+    height: auto;
+    font-size: 2.5rem;
   }
 }
