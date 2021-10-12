@@ -7,62 +7,26 @@ body,
   font-size: 62.5%;
 }
 
-@keyframes loading-background {
+@keyframes loading-screen {
   0% {
-    opacity: 1;
-    transform: translateX(-100%);
+    opacity: 0%;
   }
   100% {
-    transform: translateX(0);
-  }
-}
-@keyframes site-title {
-  0% {
     opacity: 0;
   }
-  10% {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
 }
-@keyframes gallery {
-  0% {
-    transform: translateX(100%);
-  }
-}
-@keyframes gallery-card {
-  0% {
-    opacity: 0;
-    transform: rotateY(0deg);
-  }
-  10% {
-    transform: translateX(-200%);
-  }
-  25% {
-    opacity: 0.25;
-    transform: rotateY(90deg);
-  }
-  50% {
-    opacity: 0.5;
-    transform: rotateY(180deg);
-  }
-  75% {
-    transform: rotateY(270deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateY(360deg);
-  }
+
+@keyframes {
 }
 
 body {
-  background-image: url(img/blackfabricbackground.jpg);
+  /*background-image: url(img/blackfabricbackground.jpg);*/
 }
-
+/*
 .header-background {
   background-image: url(img/Repeating_Lemon.jpg);
   height: 10%;
-  animation: 2s ease-out 0s 1 loading-background;
+  animation: 10s ease-in 0s 1 loading-screen;
 }
 
 .site-title {
@@ -73,7 +37,6 @@ body {
   position: relative;
   top: 25%;
   text-align: center;
-  animation: 2s ease-out 0s 1 site-title;
 }
 
 .gallery {
@@ -87,7 +50,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  animation: 2s ease-out 0s 1 gallery;
+  animation: 10s ease-in 0s 1 loading-screen;
 }
 
 .gallery-card {
@@ -99,7 +62,6 @@ body {
   height: 45rem;
   margin: 4.5rem auto;
   transition: all 0.6s;
-  animation: 4s ease-out 0s 1 gallery-card;
 }
 
 .card-header {
@@ -116,9 +78,9 @@ body {
   position: absolute;
   padding: 1rem;
   width: 100%;
-  height: 65%;
+  height: 75%;
   position: absolute;
-  top: 50%;
+  top: 52.5%;
   left: 50%;
   transform: translate(-50%, -55%);
 }
@@ -141,7 +103,19 @@ body {
   right: 0;
   bottom: 0;
 }
+*/
+.loading-screen {
+  background-color: red;
+  margin-top: 25%;
+}
 
+.loading-img {
+}
+
+.gold-bar {
+  width: 10rem;
+  height: auto;
+}
 .mona-lisa-card:hover,
 .the-sphinx-card:hover {
   transform: scale(1.25);
