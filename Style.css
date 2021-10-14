@@ -9,10 +9,25 @@ body,
 
 @keyframes loading-screen {
   0% {
-    opacity: 0%;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+    transform: rotateY(720deg) translateY(-15rem);
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+  80% {
+    opacity: 1;
+    transform: rotateY(360deg);
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -20,9 +35,9 @@ body,
 }
 
 body {
-  /*background-image: url(img/blackfabricbackground.jpg);*/
+  background-image: url(img/blackfabricbackground.jpg);
 }
-/*
+
 .header-background {
   background-image: url(img/Repeating_Lemon.jpg);
   height: 10%;
@@ -103,18 +118,22 @@ body {
   right: 0;
   bottom: 0;
 }
-*/
 .loading-screen {
-  background-color: red;
-  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 37.5%;
+  left: 12.5%;
 }
 
-.loading-img {
-}
-
-.gold-bar {
-  width: 10rem;
+.crown-loading {
+  width: 30rem;
   height: auto;
+}
+
+.crown1 {
+  animation: 20s ease-out 0s 1 loading-screen;
 }
 .mona-lisa-card:hover,
 .the-sphinx-card:hover {
