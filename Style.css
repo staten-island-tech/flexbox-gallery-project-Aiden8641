@@ -7,35 +7,87 @@ body,
   font-size: 62.5%;
 }
 
-@keyframes loading-screen {
+@keyframes crown1-loading {
   0% {
     opacity: 1;
   }
-  20% {
-    opacity: 1;
+  12% {
     transform: rotateY(720deg) translateY(-15rem);
   }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-    transform: rotateY(360deg);
-  }
-  80% {
-    opacity: 1;
-    transform: rotateY(360deg);
+  50% {
+    transform: rotateY(1440deg);
   }
   100% {
     opacity: 1;
   }
 }
-
-@keyframes {
+@keyframes crown2-loading {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    transform: rotateY(720deg) translateY(-15rem);
+  }
+  50% {
+    transform: rotateY(1440deg);
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
+@keyframes crown3-loading {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    transform: rotateY(720deg) translateY(-15rem);
+  }
+  50% {
+    transform: rotateY(1440deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes crown4-loading {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    transform: rotateY(720deg) translateY(-15rem);
+  }
+  50% {
+    transform: rotateY(1440deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes crown5-loading {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    transform: rotateY(720deg) translateY(-15rem);
+  }
+  50% {
+    transform: rotateY(1440deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes body-loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   background-image: url(img/blackfabricbackground.jpg);
+  animation: 18s ease-in 0s 1 body-loading;
 }
 
 .header-background {
@@ -125,6 +177,7 @@ body {
   position: absolute;
   top: 37.5%;
   left: 12.5%;
+  opacity: 0;
 }
 
 .crown-loading {
@@ -133,8 +186,25 @@ body {
 }
 
 .crown1 {
-  animation: 20s ease-out 0s 1 loading-screen;
+  animation: 18s ease-out 0s 1 crown1-loading;
 }
+
+.crown2 {
+  animation: 18s ease-out 0s 1 crown2-loading;
+}
+
+.crown3 {
+  animation: 18s ease-out 0s 1 crown3-loading;
+}
+
+.crown4 {
+  animation: 18s ease-out 0s 1 crown4-loading;
+}
+
+.crown5 {
+  animation: 18s ease-out 0s 1 crown5-loading;
+}
+
 .mona-lisa-card:hover,
 .the-sphinx-card:hover {
   transform: scale(1.25);
