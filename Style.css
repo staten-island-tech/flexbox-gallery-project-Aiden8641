@@ -96,7 +96,7 @@ body {
 .header-background {
   background-image: url(img/Repeating_Lemon.jpg);
   height: 10%;
-  animation: 9s ease-in 0s 1 body-loading;
+  animation: 9.5s ease-in 0s 1 body-loading;
 }
 
 .site-title {
@@ -120,7 +120,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  animation: 9s ease-in 0s 1 body-loading;
+  animation: 9.5s ease-in 0s 1 body-loading;
 }
 
 .gallery-card {
@@ -188,23 +188,23 @@ body {
 }
 
 .crown1 {
-  animation: 8s ease-out 0s 1 crown1-loading;
+  animation: 8s ease-out 0.5s 1 crown1-loading;
 }
 
 .crown2 {
-  animation: 8s ease-out 0s 1 crown2-loading;
+  animation: 8s ease-out 0.5s 1 crown2-loading;
 }
 
 .crown3 {
-  animation: 8s ease-out 0s 1 crown3-loading;
+  animation: 8s ease-out 0.5s 1 crown3-loading;
 }
 
 .crown4 {
-  animation: 8s ease-out 0s 1 crown4-loading;
+  animation: 8s ease-out 0.5s 1 crown4-loading;
 }
 
 .crown5 {
-  animation: 8s ease-out 0s 1 crown5-loading;
+  animation: 8s ease-out 0.5s 1 crown5-loading;
 }
 
 .mona-lisa-card:hover,
