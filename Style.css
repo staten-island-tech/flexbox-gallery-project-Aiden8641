@@ -9,7 +9,7 @@ body,
 
 @keyframes crown1-loading {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   12% {
     transform: rotateY(720deg) translateY(-15rem);
@@ -23,7 +23,7 @@ body,
 }
 @keyframes crown2-loading {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   15% {
     transform: rotateY(720deg) translateY(-15rem);
@@ -37,7 +37,7 @@ body,
 }
 @keyframes crown3-loading {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   20% {
     transform: rotateY(720deg) translateY(-15rem);
@@ -51,7 +51,7 @@ body,
 }
 @keyframes crown4-loading {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   25% {
     transform: rotateY(720deg) translateY(-15rem);
@@ -65,7 +65,7 @@ body,
 }
 @keyframes crown5-loading {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   30% {
     transform: rotateY(720deg) translateY(-15rem);
@@ -81,19 +81,22 @@ body,
   0% {
     opacity: 0;
   }
+  95% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
 }
+
 body {
   background-image: url(img/blackfabricbackground.jpg);
-  animation: 18s ease-in 0s 1 body-loading;
 }
 
 .header-background {
   background-image: url(img/Repeating_Lemon.jpg);
   height: 10%;
-  animation: 10s ease-in 0s 1 loading-screen;
+  animation: 9s ease-in 0s 1 body-loading;
 }
 
 .site-title {
@@ -117,7 +120,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  animation: 10s ease-in 0s 1 loading-screen;
+  animation: 9s ease-in 0s 1 body-loading;
 }
 
 .gallery-card {
@@ -176,33 +179,32 @@ body {
   align-items: center;
   position: absolute;
   top: 37.5%;
-  left: 12.5%;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .crown-loading {
-  width: 30rem;
+  width: 18%;
   height: auto;
 }
 
 .crown1 {
-  animation: 18s ease-out 0s 1 crown1-loading;
+  animation: 8s ease-out 0s 1 crown1-loading;
 }
 
 .crown2 {
-  animation: 18s ease-out 0s 1 crown2-loading;
+  animation: 8s ease-out 0s 1 crown2-loading;
 }
 
 .crown3 {
-  animation: 18s ease-out 0s 1 crown3-loading;
+  animation: 8s ease-out 0s 1 crown3-loading;
 }
 
 .crown4 {
-  animation: 18s ease-out 0s 1 crown4-loading;
+  animation: 8s ease-out 0s 1 crown4-loading;
 }
 
 .crown5 {
-  animation: 18s ease-out 0s 1 crown5-loading;
+  animation: 8s ease-out 0s 1 crown5-loading;
 }
 
 .mona-lisa-card:hover,
